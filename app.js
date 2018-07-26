@@ -2,7 +2,7 @@
 function initAutocomplete() {
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat :-33.4 , lng :-70.6 },
-    zoom: 13,
+    zoom: 15,
     mapTypeId: 'roadmap'
   });
   let infoWindow = new google.maps.InfoWindow();
@@ -42,6 +42,15 @@ function initAutocomplete() {
         console.log("Returned place contains no geometry");
         return;
       }
+    //filtro para restaurantes
+      if(place.types.filter(i=>i=="restaurant").length==0){
+        return;
+      } 
+      
+      
+      console.log(place);
+    
+
       var icon = {
         url: place.icon,
         size: new google.maps.Size(71, 71),
