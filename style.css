@@ -1,6 +1,10 @@
 body{
   background-color: grey;      
 }
+.entrada{
+ text-align: center;
+ color:goldenrod;
+}
 .title{
   text-align: center;
   color: goldenrod;
