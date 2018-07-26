@@ -1,3 +1,8 @@
+$('#segunda').hide();
+setTimeout(function() { 
+  $('#primera').hide();
+  $('#segunda').show();
+}, 5000);
 
 function initAutocomplete() {  
   var map = new google.maps.Map(document.getElementById('map'), {

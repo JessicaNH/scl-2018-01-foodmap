@@ -12,17 +12,24 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <h1 class="entrada">Foodmap</h1>
+  <div id="primera" class="container-fluid">
+    <h1 class="entrada">Cargando Foodmap...</h1>
   </div>
-  <div class="container-fluid">
+  <div id="segunda" class="container-fluid">
     <h1 class="title">Foodmap</h1>
     <div class="row">
       <div class="col-3"></div>
       <div class="col-6" id="map"></div>
-      <div class="col-3"></div>
+      <div class="col-3"></div>      
     </div>
-    <input id="pac-input" class="controles" type="text" placeholder="Cuadro de búsqueda">
+    <div class="row">
+      <div class="col-3"></div>
+      <div class="col-6">
+        <h3 class="subtitl">Comida cerca de ti</h3>
+        <input id="pac-input" class="controles" type="text" placeholder="Cuadro de búsqueda">
+      </div>  
+      <div class="col-3"></div>   
+    </div>    
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
