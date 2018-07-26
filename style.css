@@ -1,5 +1,13 @@
+body{
+  background-color: grey;      
+}
+.title{
+  text-align: center;
+  color: goldenrod;
+}
 #map {
   width: 100%;
   height: 400px;
   background-color: grey;
+  
 }
